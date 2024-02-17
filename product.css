@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 25px, 7%;
+  border-bottom: solid 1px rgba(0, 0, 7);
+  box-shadow: 1px 2px 15px rgba(0, 0, 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.logo i {
+  color: #6f4e37;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: black;
+  margin-left: 1.5rem;
+}
+
+.btn {
+  padding: 3px 1.3rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  transition: 0.4s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+#chek {
+  display: none;
+}
+.fa-bars {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-row-gap: 30px;
+}
+
+.items.img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.item img:hover {
+  transform: scale(1.04);
+}
+
+.item h4 {
+  padding: 5px;
+  text-align: center;
+}
+
+.item button {
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(68, 226, 102);
+  color: #dae8dc;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s all;
+}
+
+.item button:hover {
+  transform: scale(1.04);
+}
+
+@media screen and(max-width:1000px){
+              .items{
+                            grid-template-columns: repeat(2.1fr);
+              }
+}
+
+@media screen and(max-width:768px){
+              .items{
+                            grid-template-columns: repeat(1.1fr);
+              }
+}
+
+
